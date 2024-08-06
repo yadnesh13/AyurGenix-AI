@@ -1,0 +1,5 @@
+Lowercasing: Convert all text to lowercase to ensure uniformity.
+Removing Punctuation: Strip punctuation to clean the text.
+Tokenization: Split the text into individual words or tokens.
+Removing Stop Words: Remove common words that don't carry significant meaning (e.g., 'and', 'the').
+Stemming/Lemmatization: Reduce words to their base or root form.
