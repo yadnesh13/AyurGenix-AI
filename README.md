@@ -1,6 +1,40 @@
 # AyurAI - Ayurvedic Medicine Data Extraction and Analysis
 
-AyurAI is a project designed to extract and analyze relevant information from Ayurvedic text data. The primary goal is to identify diseases, their Ayurvedic treatments, cures, and side effects from a collection of Ayurvedic texts, and store this information in a structured format such as a CSV file.
+AyurGenix AI: Intelligent Ayurvedic Formulation Advisor
+
+Project Overview
+
+AyurGenix AI is an AI-powered software designed to bridge the gap between traditional Ayurvedic medicine and modern healthcare. By leveraging the vast knowledge contained within classical Ayurvedic texts, the project aims to develop a system that can suggest appropriate Ayurvedic drugs and formulations for various diseases and pharmacological properties.
+
+Problem Statement
+
+Modern healthcare systems often overlook the potential of traditional medicine, particularly Ayurveda. Despite its efficacy and historical significance, Ayurveda's integration into contemporary medicine remains limited due to the vast and complex nature of its texts. This project seeks to address this challenge by creating an AI-based solution.
+
+Project Goals
+
+    Develop a robust AI model capable of understanding and processing Ayurvedic text data.
+    Extract relevant information about herbs, diseases, and formulations.
+    Create a knowledge base of Ayurvedic concepts and relationships.
+    Build a user-friendly interface for interacting with the system.
+
+Expected Outcomes
+
+    A functional AI-powered software capable of suggesting Ayurvedic treatments based on user input.
+    A valuable tool for healthcare professionals and individuals interested in Ayurveda.
+    Increased accessibility and utilization of Ayurvedic knowledge.
+
+Key Challenges
+
+    Extracting accurate and relevant information from complex Ayurvedic texts.
+    Developing an AI model capable of understanding the nuances of Ayurvedic concepts.
+    Ensuring the reliability and efficacy of the suggested formulations.
+
+Next Steps
+
+    Data collection and preprocessing.
+    Model development and training.
+    User interface design and development.
+    System testing and evaluation.
 
 ## Table of Contents
 - [Project Structure](#project-structure)
@@ -59,35 +93,7 @@ AyurAI/
    nltk.download('averaged_perceptron_tagger')
    ```
 
-## Usage
 
-### Step 1: Preprocess Text Data
-Run the `extract_text.py` script to read and preprocess the Ayurvedic text files.
-
-```sh
-python preprocessing/extract_text.py
-```
-
-### Step 2: Extract and Analyze Data
-Run the `preprocessing1_to_csv.py` script to extract relevant entities and store them in a CSV file.
-
-```sh
-python preprocessing/preprocessing1_to_csv.py
-```
-
-### Data Preprocessing
-The `extract_text.py` script reads all `.txt` files from the specified directory, removes unnecessary whitespace, and combines the texts into a single file (`combined_preprocessed_text.txt`).
-
-### Entity Extraction
-The `preprocessing1_to_csv.py` script uses a pre-trained NLP model to identify and extract diseases, treatments, and side effects from the preprocessed text. This data is then stored in `ayurvedic_medicine_data.csv`.
-
-## Results
-The final output is a CSV file (`ayurvedic_medicine_data.csv`) containing structured data extracted from the Ayurvedic texts.
-
-### CSV File Columns
-- `Disease`
-- `Treatments`
-- `Side Effects`
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
